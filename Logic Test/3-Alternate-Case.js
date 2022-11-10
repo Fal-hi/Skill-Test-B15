@@ -1,23 +1,26 @@
-function alternateCase(str) {
-  const isUpperCase = (char) => char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90;
-  const isLowerCase = (char) => char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122;
+const alternateCase = (string) => {
+  const isUpperCase = (char) =>
+    char.charCodeAt(0) >= 65 && char.charCodeAt(0) <= 90;
+  const isLowerCase = (char) =>
+    char.charCodeAt(0) >= 97 && char.charCodeAt(0) <= 122;
 
-  let newStr = "";
+  let newString = "";
+  let margin = 32;
 
-  const margin = 32;
-  for (let i = 0; i < str.length; i++) {
-    const curr = str[i];
+  for (let i = 0; i < string.length; i++) {
+    const curr = string[i];
 
     if (isLowerCase(curr)) {
-      newStr += String.fromCharCode(curr.charCodeAt(0) - margin);
+      newString += String.fromCharCode(curr.charCodeAt(0) - margin);
     } else if (isUpperCase(curr)) {
-      newStr += String.fromCharCode(curr.charCodeAt(0) + margin);
+      newString += String.fromCharCode(curr.charCodeAt(0) + margin);
     } else {
-      newStr += curr;
+      newString += curr;
     }
   }
-  return newStr;
-}
-console.log(alternateCase("HELLO"));
-console.log(alternateCase("hello"));
+  return newString;
+};
+
+console.log(alternateCase("abc"));
+console.log(alternateCase("ABC"));
 console.log(alternateCase("Hello World"));

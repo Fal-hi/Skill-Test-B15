@@ -67,10 +67,10 @@ export default function Header() {
                   <Nav.Link href="#">Events</Nav.Link>
                   <Nav.Link href="#">Partnership</Nav.Link>
                   <div className="nav-btn">
-                    <a href="#" className="btn btn-outline-success">
+                    <a href="#" className="btn">
                       Masuk
                     </a>
-                    <a href="#" className="btn btn-success">
+                    <a href="#" className="btn">
                       Daftar
                     </a>
                   </div>

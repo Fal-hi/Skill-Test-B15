@@ -52,3 +52,47 @@ body {
   border-right: none;
   border-left: none;
 }
+
+@media (max-width: 575.98px) {
+  .nav-link a {
+    color: rgb(25, 25, 25);
+    text-decoration: none;
+  }
+
+  .nav-btn {
+    margin-top: 1rem;
+  }
+
+  .nav-btn .btn:nth-child(1) {
+    border: 1px solid rgb(19, 164, 88);
+    color: rgb(19, 164, 88);
+    margin-right: 1rem;
+  }
+
+  .nav-btn .btn:nth-child(2) {
+    background-color: rgb(19, 164, 88);
+    color: #fefefe;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .nav-link a {
+    color: rgb(25, 25, 25);
+    text-decoration: none;
+  }
+
+  .nav-btn {
+    margin-top: 1rem;
+  }
+
+  .nav-btn .btn:nth-child(1) {
+    border: 1px solid rgb(19, 164, 88);
+    color: rgb(19, 164, 88);
+    margin-right: 1rem;
+  }
+
+  .nav-btn .btn:nth-child(2) {
+    background-color: rgb(19, 164, 88);
+    color: #fefefe;
+  }
+}

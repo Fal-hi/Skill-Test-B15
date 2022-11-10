@@ -58,7 +58,7 @@ export default function Tentang() {
       </Container>
       <Container className="mascot">
         <Row>
-          <Col lg={7} className="content">
+          <Col lg={7} className="content" xs={{ order: 2 }}>
             <article>
               <h3>Maskot Kotakode</h3>
               <h1>Kucing Robot Koko!</h1>
@@ -75,7 +75,7 @@ export default function Tentang() {
               </p>
             </article>
           </Col>
-          <Col lg={5} className="icon">
+          <Col lg={5} className="icon" xs={{ order: 1 }}>
             <img src={Mascot} alt="Maskot Kotakode" />
           </Col>
         </Row>
@@ -114,8 +114,8 @@ const LIST_TIM = [
     job: "Computer Engineering @University of Toronto 2019",
     exp1: "Deep Learning Engineer @IBM Canada (1.5 years)",
     exp2: "Deep Learning Engineer / Software Engineer @Nightingtale.ai Canada (1.5 years)",
-    link1: <FaLinkedin />,
-    link2: <FaGithubSquare />,
+    link1: <FaGithubSquare />,
+    link2: <FaLinkedin />,
   },
   {
     id: 2,
@@ -125,8 +125,8 @@ const LIST_TIM = [
     job: "Computer Science @University of British Columbia 2020",
     exp1: "Software Engineer @Google Canada (Currently)",
     exp2: "Software Engineer @Google Sillcon Valley (4 month)",
-    link1: <FaLinkedin />,
-    link2: <FaGithubSquare />,
+    link1: <FaGithubSquare />,
+    link2: <FaLinkedin />,
   },
   {
     id: 3,
@@ -136,7 +136,7 @@ const LIST_TIM = [
     job: "Computing & Information Systems @University of London 2019",
     exp1: "Software Engineer @Crowde (3 months)",
     exp2: "CEO @Egglab.id",
-    link1: <FaLinkedin />,
-    link2: <FaGithubSquare />,
+    link1: <FaGithubSquare />,
+    link2: <FaLinkedin />,
   },
 ];

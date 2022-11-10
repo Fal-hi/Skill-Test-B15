@@ -17,6 +17,10 @@ header {
           font-weight: 600;
           min-width: 0;
           padding: 8px 16px;
+          a {
+            color: rgb(117, 117, 117);
+            text-decoration: none;
+          }
           &:hover {
             border: 1px solid rgb(19, 164, 88);
             border-radius: 4px;
@@ -49,15 +53,15 @@ header {
         }
         .nav-btn {
           margin-left: auto;
-          a {
+          .btn {
             font-weight: 500;
             padding: 0.5rem 2.2rem;
             border-radius: 4px;
-            &:first-child {
+            &:nth-child(1) {
               border: 1px solid rgb(19, 164, 88);
               color: rgb(19, 164, 88);
             }
-            &:last-child {
+            &:nth-child(2) {
               background-color: rgb(19, 164, 88);
               color: #fefefe;
               margin-left: 1rem;

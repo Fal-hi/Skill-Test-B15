@@ -1,0 +1,54 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: local("Quicksand"),
+    url(../src/assets/fonts/Quicksand-VariableFont_wght.ttf) format("truetype");
+}
+
+body {
+  font-family: "Quicksand", sans-serif !important;
+}
+
+.card {
+  background-color: transparent;
+  border: none;
+  border-radius: 25px;
+}
+
+.navbar-toggler {
+  border: none;
+  /* color: rgb(19, 164, 88) !important; */
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+.offcanvas-header {
+  padding: 1rem 1rem 1rem 0.5rem;
+}
+
+.offcanvas.show:not(.hiding),
+.offcanvas.showing {
+  width: 55%;
+}
+
+.dropdown-toggle::after {
+  border-right: none;
+  border-left: none;
+}
